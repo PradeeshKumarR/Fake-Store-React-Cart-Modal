@@ -1,0 +1,121 @@
+/**
+ * ProductCard.css
+ * Styles for individual product cards, including image, title, price, and add-to-cart button.
+ * Ensures responsive design for mobile devices.
+ */
+.product-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px;
+  text-align: center;
+  transition: box-shadow 0.3s ease;
+  background-color: #fff;
+}
+
+/* Card hover effect */
+.product-card:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 1);
+}
+
+/* Product image styling */
+.product-image {
+  max-width: 100%;
+  width: 300px;
+  height: 300px;
+  border-radius: 8px;
+  object-fit: contain;
+}
+
+/* Product title styling */
+.product-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 8px 0;
+  height: 3.6em; /* Fixed height (adjust as needed for 1 or 2 lines) */
+  line-height: 1.2em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  font-family: "Volkhov", serif;
+}
+
+/* 
+ * Footer of the product card:
+ * Aligns product price and add-to-cart button horizontally,
+ * spaces them apart, and ensures vertical centering.
+ */
+.product-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 12px;
+  gap: 12px;
+}
+
+/* Product price styling */
+.product-price {
+  color: #fa7436;
+  background-color: #ffe7db;
+  font-weight: 700;
+  margin-left: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+}
+
+/* Add to cart button styling */
+.add-to-cart-button {
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* 
+ * Add to Cart button color variants and hover effects:
+ * - Blue for "Add to Cart" state, with a darker blue on hover.
+ * - Green for "Added to Cart" state, with a darker green on hover.
+ */
+.add-to-cart-button.add {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Button hover effect */
+.add-to-cart-button.add:hover {
+  background-color: #0056b3;
+}
+
+.add-to-cart-button.added {
+  background-color: #28a745;
+  color: #fff;
+}
+
+/* Button hover effect */
+.add-to-cart-button.added:hover {
+  background-color: #218838;
+}
+
+/* Responsive adjustments for small screens */
+@media (max-width: 600px) {
+  .product-card {
+    margin: 8px;
+  }
+
+  .product-title {
+    font-size: 0.9rem;
+  }
+
+  .product-price {
+    font-size: 0.9rem;
+  }
+
+  .add-to-cart-button {
+    padding: 8px12px;
+  }
+}

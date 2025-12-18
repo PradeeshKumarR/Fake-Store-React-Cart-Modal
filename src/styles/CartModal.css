@@ -1,0 +1,110 @@
+/**
+ * CartModal.css
+ * Styles for the cart modal overlay, modal content, cart items, and responsive design.
+ */
+.cart-modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7); /* Modal overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+/* Modal content box */
+.cart-modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+/* Modal header section */
+.cart-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart-modal-header h2 {
+  margin: 0;
+}
+
+/* Close button styling */
+.close-button {
+  position: absolute;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Cart items container */
+.cart-items {
+  max-height: 400px;
+  overflow-y: auto;
+  margin: 20px 0;
+}
+
+/* Individual cart item styling */
+.cart-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  gap: 10px;
+}
+
+.cart-item img {
+  min-width: 50px;
+  max-width: 50px;
+  height: 50px;
+  object-fit: contain;
+  margin-right: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Remove from cart button */
+.remove-button {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* 
+ * Total items styling:
+ * Styles the total items count in the cart modal for emphasis.
+ */
+.total {
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+/* New cart item price styling */
+.cart-item-price {
+  font-size: 1.1rem;
+  color: #fa7436;
+  font-weight: 600;
+  margin: 0.25em 0;
+  letter-spacing: 0.5px;
+}
+
+/* Responsive modal width for small screens */
+@media (max-width: 600px) {
+  .cart-modal-content {
+    width: 95%;
+  }
+}
