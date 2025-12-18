@@ -32,7 +32,7 @@ const CartModal = ({ cart, removeFromCart, toggleCartModal }) => {
                             <div className="cart-item" key={item.id}>
                                 <img src={item.image} alt={item.title} />
                                 <div>
-                                    <h3>{item.title}</h3>
+                                    <h3 className="cart-item-title">{item.title}</h3>
                                     <p className="cart-item-price">${item.price.toFixed(2)}</p>
                                     {/* Remove from cart item */}
                                     <button

@@ -93,9 +93,15 @@
   margin: 10px 0;
 }
 
+/* New cart item title styling */
+.cart-item-title {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
 /* New cart item price styling */
 .cart-item-price {
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   color: #fa7436;
   font-weight: 600;
   margin: 0.25em 0;
