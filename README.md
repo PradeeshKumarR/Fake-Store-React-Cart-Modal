@@ -15,13 +15,13 @@ This is a React application that fetches data from the Fake Store API and implem
 1. Clone the repository:
 
 ```
-https://github.com/PradeeshKumarR/Fake-Store-Cart-Modal-App.git
+git clone https://github.com/PradeeshKumarR/Fake-Store-React-Cart-Modal.git
 ```
 
 2. Navigate to the project directory:
 
 ```
-cd fake-store-react-app
+cd Fake-Store-React-Cart-Modal
 ```
 
 3. Install the dependencies:
@@ -33,10 +33,45 @@ npm install
 4. Start the development server:
 
 ```
-npm start
+npm run dev
 ```
 
-5. Open your browser and go to `http://localhost:5173/` to view the application.
+5. After running npm run dev, open your browser and navigate to the localhost URL shown in the terminal to view the application.
+
+## Directory Structure
+
+The project is organized into the following directory structure:
+
+```
+Fake-Store-React-Cart-Modal/
+  src/
+    components/
+      CartModal.jsx
+      Navbar.jsx
+      ProductCard.jsx
+    hooks/
+      useFetchProducts.js
+    styles/
+      App.css
+      CartModal.css
+      Navbar.css
+      ProductCard.css
+    App.jsx
+    main.jsx
+    index.css
+  .gitignore
+  README.md
+  eslint.config.js
+  index.html
+  package-lock.json
+  package.json
+  vite.config.js
+```
+
+- src/components/ — React components for UI
+- src/hooks/ — Custom React hooks
+- src/styles/ — CSS files for styling
+- App.jsx — Main application logic
 
 ## Usage
 
@@ -51,11 +86,13 @@ npm start
 - React Hooks
 - CSS for styling
 - Fake Store API for product data
+- Vite (for fast development and build)
 
-## Contributing
+## Live Demo
 
-Feel free to submit issues or pull requests if you have suggestions or improvements for the project.
+View the deployed landing page here:  
+[https://fakestorereactcartmodalpradeeshkumarr.netlify.app/](https://fakestorereactcartmodalpradeeshkumarr.netlify.app/)
 
 ## License
 
-This project is open-source and available under the [MIT License](LICENSE).
+This project is for educational and demonstration purposes only.
