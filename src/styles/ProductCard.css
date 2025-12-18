@@ -81,7 +81,6 @@
 /* 
  * Add to Cart button color variants and hover effects:
  * - Blue for "Add to Cart" state, with a darker blue on hover.
- * - Green for "Added to Cart" state, with a darker green on hover.
  */
 .add-to-cart-button {
   background-color: #6495ed;
