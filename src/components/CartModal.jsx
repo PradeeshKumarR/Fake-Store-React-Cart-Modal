@@ -20,6 +20,7 @@ const CartModal = ({ cart, removeFromCart, toggleCartModal }) => {
                 <div className="cart-modal-header">
                     <h2>Your Cart</h2>
                 </div>
+                {/* Display total items */}
                 <div className="total">Total Items: {totalItems}</div>
                 {/* Show message if cart is empty */}
                 {totalItems === 0 ? (
@@ -43,8 +44,6 @@ const CartModal = ({ cart, removeFromCart, toggleCartModal }) => {
                                 </div>
                             </div>
                         ))}
-                        {/* Display total items */}
-                        {/* <div className="total">Total Items: {totalItems}</div> */}
                     </div>
                 )}
             </div>

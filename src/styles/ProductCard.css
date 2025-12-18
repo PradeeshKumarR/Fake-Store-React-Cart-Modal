@@ -50,6 +50,7 @@
  */
 .product-card-footer {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   margin-top: 12px;
@@ -74,6 +75,7 @@
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  font-weight: bold;
 }
 
 /* 
@@ -81,24 +83,14 @@
  * - Blue for "Add to Cart" state, with a darker blue on hover.
  * - Green for "Added to Cart" state, with a darker green on hover.
  */
-.add-to-cart-button.add {
-  background-color: #007bff;
+.add-to-cart-button {
+  background-color: #6495ed;
   color: #fff;
 }
 
 /* Button hover effect */
-.add-to-cart-button.add:hover {
+.add-to-cart-button:hover {
   background-color: #0056b3;
-}
-
-.add-to-cart-button.added {
-  background-color: #28a745;
-  color: #fff;
-}
-
-/* Button hover effect */
-.add-to-cart-button.added:hover {
-  background-color: #218838;
 }
 
 /* Responsive adjustments for small screens */
@@ -117,5 +109,11 @@
 
   .add-to-cart-button {
     padding: 8px12px;
+  }
+}
+
+@media (max-width: 250px) {
+  .product-card-footer {
+    flex-direction: column;
   }
 }

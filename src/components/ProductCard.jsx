@@ -17,7 +17,7 @@ const ProductCard = ({ product, addToCart, cartItems }) => {
      */
     const handleAddToCart = () => {
         if (isInCart) {
-            alert('This item is already in your cart.');
+            alert('Item already added to the cart.');
         } else {
             addToCart(product);
         }
@@ -38,11 +38,10 @@ const ProductCard = ({ product, addToCart, cartItems }) => {
                 <p className="product-price">${product.price.toFixed(2)}</p>
                 {/* Add to cart button */}
                 <button
-                    className={`add-to-cart-button ${isInCart ? 'added' : 'add'}`}
+                    className="add-to-cart-button"
                     onClick={handleAddToCart}
-                    disabled={isInCart}
                 >
-                    {isInCart ? 'Added to Cart' : 'Add to Cart'}
+                    Add to Cart
                 </button>
             </div>
         </div>
